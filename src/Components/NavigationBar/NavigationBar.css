@@ -1,0 +1,77 @@
+.my-navbar {
+  background-color: #b81a0e;        /* dark background */
+  font-family: 'Excon', sans-serif;  /* change font */
+  font-size: 15px;               /* increase font size */
+  color: #fefffe;                  /* text color */
+    padding: 0;
+    height: 90px; /* Set a fixed height for consistent behavior */
+padding-right:0% !important; /* Remove right padding */
+  display: flex;
+
+}
+.container {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0px !important;
+}
+
+.my-nav-links {
+  
+  margin-right: 4vw;          /* Spacing from right edge */
+}
+.my-nav-links > *:not(.my-button) {
+
+height: 100% !important; /* Ensure all links take full height */
+ padding: 35px 20px !important; /* Adjust padding to match the height */
+
+}
+
+
+.my-navbar a {
+  color: #fefffe;                  /* links white */
+   transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.my-navbar a:hover:not(.icon-link) {
+  color: #b81a0e;                /* link hover color */
+  background-color: #fefffe;    /* link hover background */
+
+}
+
+.my-button {
+  background-color: #fefffe !important;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border: none !important;              /* remove border */
+  height: 40px;          /* fixed height for button */
+  margin-left: 40px; /* space from left edge */
+
+  align-self: center;    /* vertically center button */
+   transition: transform 0.3s ease !important; /* smooth transition */
+}
+.my-button:hover{
+  transform: scale(1.1); /* grow to 110% size */
+  color:black !important; /* ensure text color remains black on hover */
+}
+
+.logo {
+padding-left: 60%;
+  height: 75px !important; /* Adjust logo height */
+  padding-left: 4vw;
+}
+.navbar-brand:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+.icon-link {
+  transition: transform 0.3s ease !important; /* smooth transition */
+  display: inline-block; /* needed to make transform work nicely on inline elements */
+  color: inherit;           /* Keep the normal color */
+}
+.icon-link:hover {
+  transform: scale(1.3); /* grow to 150% size */
+  color: inherit !important;  /* Prevent Bootstrap's hover color */
+}

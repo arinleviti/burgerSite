@@ -1,0 +1,10 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background-color: #b81a0e;
+}
+

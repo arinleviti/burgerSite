@@ -1,0 +1,17 @@
+.code, .monospace-text {
+  font-family: 'Noto Mono', monospace;
+  font-size: 30px;
+}
+
+.body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.excon {
+  font-family: 'Excon', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  font-size: 51px;
+  line-height: 43.35px;
+}
