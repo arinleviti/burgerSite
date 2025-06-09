@@ -11,10 +11,27 @@
 
 
 .video video {
-  width:550px;
-  height: 350px;       /* square size */
+   width: 90%;   /* 90% of .video width */
+  height: auto; /* keeps aspect ratio */
+  max-height:400px;  /* optional max height */
   object-fit: cover;   /* crop to fit */
   border-radius: 15px; /* optional: rounded corners */
 border: 2px solid white; /* ← this line adds visible border */
   border-color: white;
+}
+
+@media (max-width: 768px) {
+    .video {
+        padding: 0; /* remove padding on smaller screens */
+        justify-content: center; /* center video on smaller screens */
+        align-items: center; /* center video on smaller screens */
+    }
+    
+   .video video {
+    width: 400px;    /* your desired fixed width on mobile */
+    height: 400px;   /* your desired fixed height (square example) */
+    object-fit: cover; /* keep cropping */
+    border-radius: 15px;
+    border: 2px solid white;
+  }
 }

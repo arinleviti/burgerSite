@@ -1,0 +1,38 @@
+.image-wrapper {
+  height: 350px; /* or whatever you want */
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+.image-wrapper img {
+     display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0px;
+   border-top: white 5px solid;
+   border-bottom: white 5px solid;
+
+}
+.custom-container{
+    padding-top: 50px !important; /* Light background for contrast */
+padding-bottom:0px;
+padding-right: 30px !important;
+padding-left: 30px !important;
+}
+.custom-container .row {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+
+}
+
+@media (max-width: 768px) {
+  .img1{
+    border-right: white 2.8px solid;
+
+  }
+  .img2{
+    border-right: white 2.8px solid;
+  }
+}

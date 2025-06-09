@@ -1,8 +1,8 @@
 
 .hero-section {
     text-align: left;
-      padding-left:300px; /* remove padding */
-      padding-right:100px;
+      padding-left: 15%;       /* responsive padding based on parent */
+  padding-right: 10%;
       padding-top: 30px; /* adjust top padding */
   margin: 0;  /* reset margin */
     flex:1;
