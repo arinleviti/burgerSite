@@ -1,11 +1,10 @@
 
 import "./Hero.css"; // Import your custom CSS for styling
 import HeroSection from "./HeroSection/HeroSection";
-import Video from "./Video/Video"; // Import the Video component
 import React, { useEffect, useState } from "react";
 
 
-function Hero({content, media, button}) {
+function Hero({content, media, button, style}) {
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -23,40 +22,23 @@ function Hero({content, media, button}) {
     }, []);
 
   return (
-<div className="hero">
+    /* same as className={"hero" + (isMobile ? " allow-wrapping" : "")} */
+<div className={`hero ${isMobile ? "allow-wrapping" : ""}`} style={style}>
       {isMobile ? (
         <>
           {media}
-          <HeroSection content={content} />
-          {button && <div className="hero-button">{button.button}</div>}
+          <HeroSection content={content} button={button} />
+
         </>
       ) : (
         <>
-          <HeroSection content={content} />
+          <HeroSection content={content} button={button} />
           {media}
-          {button && <div className="hero-button">{button.button}</div>}
         </>
       )}
     </div>
   );
 
-  /* return (
-    <div className="hero">
-
-        {isMobile && (
-          <>
-            <Video />
-            <HeroSection content={heroContent} />
-            
-          </>
-        )}
-        {!isMobile && (
-          <>
-            <HeroSection content={heroContent} />
-            <Video />
-          </>
-        )}
-    </div>
-  ); */
+  
 }
 export default Hero;

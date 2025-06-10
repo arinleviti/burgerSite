@@ -1,0 +1,34 @@
+.products-carousel {
+  background-color: white;
+  border-radius: 10px;
+  margin-right:60px;
+  padding: 40px 0px; 
+}
+
+.carousel-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers all child elements horizontally */
+  padding: 10px;
+  height: 100%; /* Ensure full height */
+}
+
+.carousel-image {
+  height: 200px;
+  width: 100%; /* Changed from 'auto' to ensure consistent width */
+  object-fit: contain; /* Changed from 'cover' to show full image without cropping */
+  margin: 0 auto; /* Centers the image horizontally */
+  display: block; /* Helps with centering */
+}
+
+.carousel-text {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px; /* Adds spacing between image and text */
+   font-family: 'Excon', sans-serif;
+}
+.price{
+    color: #b81a0e;
+  
+    font-size: 2rem;
+}

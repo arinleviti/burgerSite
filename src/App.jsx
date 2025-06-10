@@ -5,7 +5,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Hero from './Components/Hero/Hero.jsx'
 import ThreePictures from './Components/ThreePictures/ThreePictures.jsx';
 import Marquee from './Components/Marquee/Marquee.jsx'
-import { heroContent, heroMedia, heroButton } from './Services/ContentService.jsx';
+import { heroButton2, heroContent, heroMedia,  heroMenu  } from './Services/ContentService.jsx';
+import ProductCarousel from './Components/ProductCarousel/ProductCarousel.jsx';
+import MapParent from './Components/MapParent/MapParent.jsx';
 
 function App() {
 
@@ -13,10 +15,11 @@ return (
 <div className='App'>
   <div className='header'>
     <NavigationBar />
-    <Hero content={heroContent} media={heroMedia} button={heroButton} />
+    <Hero content={heroContent} media={heroMedia}  />
     <ThreePictures />
     <Marquee />
-
+    <Hero content={heroMenu} media={<ProductCarousel />} button={heroButton2} style={{ padding: "60px 0px" }} />
+    <MapParent />
   </div>
   </div>
 )
