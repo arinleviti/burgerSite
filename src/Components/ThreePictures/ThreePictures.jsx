@@ -2,6 +2,7 @@ import './ThreePictures.css';
 import pic1 from "../../assets/burger1.jpg";
 import pic2 from "../../assets/friends.jpg";
 import pic3 from "../../assets/2burgers.jpg";
+import Marquee from '../Marquee/Marquee.jsx';
 
 
 export function ThreePictures() {
@@ -24,8 +25,11 @@ export function ThreePictures() {
       </div>
     </div>
   </div>
-</div>
-  );
+
+    <Marquee />
+  </div>
+
+  );  
 }
 
 export default ThreePictures;

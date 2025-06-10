@@ -1,0 +1,15 @@
+
+.map-parent {
+  display: flex;
+  height: 400px; /* or 100vh if you want full screen height */
+  width: 100%;
+   padding-left: 50px; /* ⬅ shift everything to the right */
+   padding-bottom: 50px;
+   padding-right: 100px;
+
+}
+.map-parent > * {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}

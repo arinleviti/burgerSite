@@ -2,3 +2,10 @@
   height: 400px;
   width: 400px;
 }
+.map-wrapper {
+  border-radius: 50px;   /* your desired radius */
+  overflow: hidden;      /* clip children */
+  height: 400px;         /* explicit height */
+  width: 400px;          /* explicit width */
+  position: relative;    /* help with stacking contexts */
+}

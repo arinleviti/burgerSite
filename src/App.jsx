@@ -17,7 +17,6 @@ return (
     <NavigationBar />
     <Hero content={heroContent} media={heroMedia}  />
     <ThreePictures />
-    <Marquee />
     <Hero content={heroMenu} media={<ProductCarousel />} button={heroButton2} style={{ padding: "60px 0px" }} />
     <MapParent />
   </div>

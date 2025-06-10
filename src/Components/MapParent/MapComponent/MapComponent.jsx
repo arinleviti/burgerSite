@@ -17,8 +17,8 @@ const position = [45.0703, 7.6869]; // Example: Turin, Italy
 
 function StoreLocator() {
   return (
-    <div >
-        <MapContainer center={position} zoom={15} style={{ height: "400px", width: "40%" }} >
+    <div className="map-wrapper">
+        <MapContainer center={position} zoom={15} style={{ height: "100%", width: "100%", borderRadius: '10px' }} >
       <TileLayer
         attribution='&copy; OpenStreetMap contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

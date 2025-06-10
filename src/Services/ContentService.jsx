@@ -26,3 +26,8 @@ export const products = [
   { id: 2, name: "COKE", image: cokeImage , price: "€1.99" },
   { id: 3, name: "NUGGETS", image: nuggetsImage , price: "€6.99" },
 ];
+
+export const mapContent = {
+  title: "FIND US ON THE MAP",
+  description: "Locate our burger shop easily. All roads lead to deliciousness!",
+};
