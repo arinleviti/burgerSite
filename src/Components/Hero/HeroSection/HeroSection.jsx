@@ -1,9 +1,11 @@
 import "./heroSection.css";
-function HeroSection() {
+
+function HeroSection({content}) {
+
   return (
     <div className="hero-section">
-      <h1 className="hero-title">WELCOME TO OUR BURGER SHOP</h1>
-      <p className="hero-description">Delicious burgers made with fresh ingredients</p>
+      <h1 className="hero-title">{content.title}</h1>
+      <p className="hero-description">{content.description}</p>
     </div>
   );
 }

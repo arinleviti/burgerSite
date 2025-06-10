@@ -3,7 +3,9 @@ import "./Hero.css"; // Import your custom CSS for styling
 import HeroSection from "./HeroSection/HeroSection";
 import Video from "./Video/Video"; // Import the Video component
 import React, { useEffect, useState } from "react";
-function Hero() {
+
+
+function Hero({content, media, button}) {
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -21,22 +23,40 @@ function Hero() {
     }, []);
 
   return (
+<div className="hero">
+      {isMobile ? (
+        <>
+          {media}
+          <HeroSection content={content} />
+          {button && <div className="hero-button">{button.button}</div>}
+        </>
+      ) : (
+        <>
+          <HeroSection content={content} />
+          {media}
+          {button && <div className="hero-button">{button.button}</div>}
+        </>
+      )}
+    </div>
+  );
+
+  /* return (
     <div className="hero">
 
         {isMobile && (
           <>
             <Video />
-            <HeroSection  />
+            <HeroSection content={heroContent} />
             
           </>
         )}
         {!isMobile && (
           <>
-            <HeroSection  />
+            <HeroSection content={heroContent} />
             <Video />
           </>
         )}
     </div>
-  );
+  ); */
 }
 export default Hero;
