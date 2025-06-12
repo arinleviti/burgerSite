@@ -5,6 +5,11 @@
   max-width: 100vw; /* prevent overflow */
   overflow-x: hidden;
 }
+.delivery-container > * {
+  flex: 1 1 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
 
 .hero-section-right {
   text-align: right;
@@ -15,11 +20,19 @@
 
 @media (max-width: 768px) {
     .delivery-container {
-        flex-direction: column;
-    }
-    .hero-section-right {
-        text-align: left;
-        padding-left: 25px;
-        padding-right: 0px;
-    }
+    flex-direction: column;
+    align-items: center; /* NEW: align children to the left */
+  }
+
+  .delivery-container > * {
+    max-width: 100%;
+    flex: none;
+  }
+
+  .hero-section-right {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 0;
+    margin-left: 0; /* NEW: prevent auto margin from pushing it right */
+  }
 }

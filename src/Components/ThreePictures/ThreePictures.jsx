@@ -1,22 +1,45 @@
 import './ThreePictures.css';
-import pic1 from "../../assets/burger1.jpg";
-import pic2 from "../../assets/friends.jpg";
-import pic3 from "../../assets/2burgers.jpg";
 import Marquee from '../Marquee/Marquee.jsx';
+import React, { useEffect, useState} from "react";
 
 
-export function ThreePictures() {
+export function ThreePictures({ prop, marquee })  {
 
-const pics = [pic1, pic2, pic3];
+  const [isMobile, SetMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      SetMobile(window.innerWidth < 786);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    };
+  }, []); 
+
+
+  // Show only first two images on mobile
+  const imagesToShow = isMobile ? prop.slice(0, 2) : prop;
 
   return (
-    <div className="pictures-row">
-      {pics.map((img, i) => (
-        <img key={i} src={img} alt={`Image ${i + 1}`} className="picture" />
-      ))}
-    </div>
+  <div className="pictures-wrapper">
+  <div className="pictures-row">
+    {imagesToShow.map((img, i) => (
+      <img key={i} src={img} alt={`Image ${i + 1}`} className="picture" />
+    ))}
+  </div>
+  <div className="marquee-wrapper">
+    {marquee}
+  </div>
+</div>
+     
+    
   );
+
 }
+
 
 
 export default ThreePictures;

@@ -23,7 +23,7 @@ function MapParent() {
     
     <div className={(isMobile ? "map-parent-mobile" : "map-parent")}>
       <MapComponent />
-      <div style={{ textAlign: "right" }}>
+      <div className={(isMobile ? "hero-section-mobile" : "hero-section")}>
         <HeroSection content={mapContent} button={null} />
       </div>
     </div>

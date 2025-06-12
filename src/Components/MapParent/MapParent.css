@@ -11,7 +11,7 @@
 .map-parent-mobile {
   display: flex;
   flex-direction: column;
-height: 400px;
+height: 500px;
 width: 100%;
   padding-left: 30px; /* ⬅ shift everything to the right */
   padding-bottom: 50px;
@@ -26,4 +26,15 @@ width: 100%;
   flex: 1;
   min-width: 0;
   min-height: 0;
+}
+.hero-section {
+text-align: right;
+display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers content vertically */
+}
+.hero-section-mobile {
+text-align: left !important;
+padding-left: 0px;
+margin-left: 0px;
 }

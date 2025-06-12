@@ -1,3 +1,18 @@
+.pictures-wrapper {
+  width: 100%;
+  max-width: 93.5vw;  /* 3 * 510px (your image width) */
+  margin: 0 auto;     /* Center the content */
+  box-sizing: border-box;
+  padding: 0 ;    /* Optional: to give a bit of breathing room on small screens */
+}
+
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 20px; /* now both get the same horizontal padding */
+}
+
 .pictures-row {
   display: flex;
   justify-content: center;
@@ -29,7 +44,7 @@
   .picture {
     border-right: 5px solid white; /* keep full border on mobile */
     margin-bottom: 10px; /* space between stacked images */
-    width: 89vw;          /* Responsive width: 90% of viewport width */
+    width: 88vw;          /* Responsive width: 90% of viewport width */
     max-width: 510px;     /* Don't grow beyond 510px on bigger screens */
     height: 350px;         /* Let height scale automatically */
     border-right: 5px solid white; /* full border */

@@ -23,11 +23,11 @@ function Hero({content, media, button, style}) {
 
   return (
     /* same as className={"hero" + (isMobile ? " allow-wrapping" : "")} */
-<div className={`hero ${isMobile ? "allow-wrapping" : ""}`} style={style}>
+<div className="hero" style={style}>
       {isMobile ? (
         <>
           {media}
-          <HeroSection content={content} button={button} />
+          <HeroSection content={content} button={button} className="justify-left"/>
 
         </>
       ) : (

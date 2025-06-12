@@ -3,6 +3,8 @@ import nuggetsVideo from '../assets/making-nuggets.mp4';
 import Video from '../Components/Hero/Video/Video.jsx';
 import nuggetsImage from '../assets/ForCarousel/nuggets.png';
 import burgerImage from '../assets/ForCarousel/burger-white-bg.jpg';
+import friends from '../assets/friends.jpg';
+import twoBurgers from '../assets/2burgers.jpg';
 import girlSelfie from '../assets/ForSocial/girl-selfie.jpg';
 import guyEatingBurger from '../assets/ForSocial/guy-eating-burger.jpg';
 import paperPlane from '../assets/ForSocial/Paper-Plane.png';
@@ -13,6 +15,9 @@ import { Nav } from "react-bootstrap";
 import uberIcon from '../assets/uber-eats.png';
 import justEatIcon from '../assets/just-eat.png';
 import deliverooIcon from '../assets/deliveroo.png';
+import pouring from '../assets/pouring.jpg';
+import exterior from '../assets/exterior.jpg';
+import redNeon from '../assets/red-neon.jpg';
 
 export const heroContent = {
     title: "WELCOME TO OUR BURGER SHOP",
@@ -72,3 +77,15 @@ export const deliveryContent = {
   <img src={deliverooIcon} alt="Uber Eats" style={{ height: '45px' }} />
 </button>
 };
+
+export const threePics1 = [
+  burgerImage,
+  friends,
+  twoBurgers
+]
+
+export const threePics2 = [
+  exterior,
+  pouring,
+  redNeon
+]

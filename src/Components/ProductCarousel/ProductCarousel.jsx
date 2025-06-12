@@ -20,7 +20,7 @@ const responsive = {
 
 function ProductsCarousel() {
   return (
-    <div className='products-carousel' style={{ width: "100%", overflow: "hidden" }}> {/* Wrapper div */}
+    <div className='products-carousel mobile-carousel' style={{ width: "100%", overflow: "hidden" }}> {/* Wrapper div */}
     <Carousel  responsive={responsive} infinite autoPlay autoPlaySpeed={3000}>
       {products.map((product) => (
         <div key={product.id} style={{ padding: "10px" }} className="carousel-item-container">

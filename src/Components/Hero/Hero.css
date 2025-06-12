@@ -1,19 +1,32 @@
-.hero {
+/* .hero {
     display: flex;
     flex-direction: row;
     align-items: center;
 gap:20px;
     
+} */
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* stretch children to same height */
+  justify-content: space-between;
+  gap: 20px;
 }
-
-
+.hero > * {
+  flex: 1 1 50%; /* Each child takes 50% */
+  max-width: 50%;
+}
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        align-items: center;
-    }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero > * {
+    max-width: 100%;
+    flex: none;
+  }
 }
-.allow-wrapping {
-    flex-wrap: wrap;
-    margin: 0px 20px;
+.justify-left{
+   text-align: left; 
 }
