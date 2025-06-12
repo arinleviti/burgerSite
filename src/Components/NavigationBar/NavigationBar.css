@@ -7,7 +7,11 @@
     height: 90px; /* Set a fixed height for consistent behavior */
 padding-right:0% !important; /* Remove right padding */
   display: flex;
-
+position: fixed !important; /* Make navbar fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030; /* High enough to stay above content */
 }
 .container {
   max-width: 100% !important;

@@ -6,30 +6,17 @@ import Marquee from '../Marquee/Marquee.jsx';
 
 
 export function ThreePictures() {
+
+const pics = [pic1, pic2, pic3];
+
   return (
-    <div className="container-fluid custom-container">
-  <div className="row g-0">
-    <div className="col-12 col-md-4 mb-4">
-      <div className="image-wrapper img1">
-        <img src={pic1} alt="Image 1" className="img" style={{ borderRight: "white 2.5px solid", borderLeft: "white 5px solid"}} />
-      </div>
+    <div className="pictures-row">
+      {pics.map((img, i) => (
+        <img key={i} src={img} alt={`Image ${i + 1}`} className="picture" />
+      ))}
     </div>
-    <div className="col-12 col-md-4 mb-4">
-      <div className="image-wrapper img2">
-        <img src={pic2} alt="Image 2" className="img" style={{ borderRight: "white 2.5px solid", borderLeft: "white 5px solid"}} />
-      </div>
-    </div>
-    <div className="col-12 col-md-4 mb-4">
-      <div className="image-wrapper img3">
-        <img src={pic3} alt="Image 3" className="img" style={{ borderRight: "white 5px solid", borderLeft: "white 5px solid"}}/>
-      </div>
-    </div>
-  </div>
-
-    <Marquee />
-  </div>
-
-  );  
+  );
 }
+
 
 export default ThreePictures;

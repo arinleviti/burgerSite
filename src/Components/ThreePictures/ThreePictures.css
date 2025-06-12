@@ -1,38 +1,41 @@
-.image-wrapper {
-  height: 350px; /* or whatever you want */
-  overflow: hidden;
-  border-radius: 0px;
+.pictures-row {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 0; /* no gap */
 }
 
-.image-wrapper img {
-     display: block;
-  width: 100%;
-  height: 100%;
+.picture {
+  width: 510px;
+  height: 400px;
   object-fit: cover;
-  object-position: center;
-  border-radius: 0px;
-   border-top: white 5px solid;
-   border-bottom: white 5px solid;
-
-}
-.custom-container{
-    padding-top: 50px !important; /* Light background for contrast */
-padding-bottom:0px;
-padding-right: 30px !important;
-padding-left: 30px !important;
-}
-.custom-container .row {
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important;
-
+  border: 5px solid white;
+  border-right: none; /* remove right border */
+  box-sizing: border-box;
 }
 
+/* Add right border only to the last image */
+.picture:last-child {
+  border-right: 5px solid white;
+}
+
+/* Mobile stacking */
 @media (max-width: 768px) {
-  .img1{
-    border-right: white 2.8px solid;
+  .pictures-row {
+    flex-direction: column;
+    align-items: center;
 
   }
-  .img2{
-    border-right: white 2.8px solid;
+  .picture {
+    border-right: 5px solid white; /* keep full border on mobile */
+    margin-bottom: 10px; /* space between stacked images */
+    width: 89vw;          /* Responsive width: 90% of viewport width */
+    max-width: 510px;     /* Don't grow beyond 510px on bigger screens */
+    height: 350px;         /* Let height scale automatically */
+    border-right: 5px solid white; /* full border */
+    margin-bottom: 10px;
+  }
+  .picture:last-child {
+    margin-bottom: 0;
   }
 }

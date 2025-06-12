@@ -1,11 +1,25 @@
 
 .map-parent {
   display: flex;
-  height: 400px; /* or 100vh if you want full screen height */
+  height: 550px; /* or 100vh if you want full screen height */
   width: 100%;
    padding-left: 50px; /* ⬅ shift everything to the right */
-   padding-bottom: 50px;
+   padding-bottom: 0px;
    padding-right: 100px;
+
+}
+.map-parent-mobile {
+  display: flex;
+  flex-direction: column;
+height: 400px;
+width: 100%;
+  padding-left: 30px; /* ⬅ shift everything to the right */
+  padding-bottom: 50px;
+  padding-right: 30px;
+}
+.map-parent-mobile > * {
+  flex: 1 1 auto;
+  min-height: 150px; /* ensure it shows something */
 
 }
 .map-parent > * {

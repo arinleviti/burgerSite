@@ -1,0 +1,39 @@
+.custom-container {
+    padding-bottom:50px;
+    padding-right:60px !important;
+    padding-top: 60px;
+}
+
+/* Make the wrapper fill the column and fix height */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px; /* fix a height you want for the image box */
+  border-left: white 5px solid; /* border around the image */
+ border-top: white 5px solid;
+    border-bottom: white 5px solid;
+border-right:  white 5px solid;
+
+}
+
+/* Make the image fill the wrapper and crop if needed */
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills and crops nicely */
+  display: block;
+
+}
+
+@media (max-width: 768px) {
+  .custom-container {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    
+  }
+  .image-wrapper {
+    border-top: white 5px solid;
+    border-bottom: white 5px solid;
+    border-right: white 5px solid;
+  }
+}
