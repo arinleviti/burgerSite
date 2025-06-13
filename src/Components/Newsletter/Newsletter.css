@@ -1,0 +1,23 @@
+.text-container h1 {
+    font-family: 'Excon', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 60px;
+    color: #fefffe;
+}
+.text-container p {
+    font-family: 'Noto Mono', monospace;
+    color: #fefffe;
+
+}
+@media (max-width: 768px) {
+  .text-container * {
+    text-align: left;
+  }
+  .custom-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}

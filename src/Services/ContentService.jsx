@@ -18,6 +18,20 @@ import deliverooIcon from '../assets/deliveroo.png';
 import pouring from '../assets/pouring.jpg';
 import exterior from '../assets/exterior.jpg';
 import redNeon from '../assets/red-neon.jpg';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+export const navBarContent = {
+  item1: "MENU",
+  item2: "LOCATIONS",
+  item3: "STORY",
+  item4: "CONTACT",
+  social1: <Nav.Link href="#insta" className="icon-link">
+                <i style={{ marginLeft: "16px"}} className="bi bi-instagram "></i>
+              </Nav.Link>,
+  social2:  <Nav.Link href="#tiktok" className="icon-link">
+                <i style={{ marginLeft: "0px"}} className="bi bi-tiktok "></i>
+              </Nav.Link>
+}
 
 export const heroContent = {
     title: "WELCOME TO OUR BURGER SHOP",
@@ -89,3 +103,8 @@ export const threePics2 = [
   pouring,
   redNeon
 ]
+
+export const newsletterContent = {
+  title: "DEALS AND NEWS IN YOUR INBOX",
+  text: "Get the latest news and offers from Best Burgers straight in your emails"
+}

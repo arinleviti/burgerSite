@@ -1,0 +1,15 @@
+.custom-buttons * {
+    font-family: 'Excon', sans-serif;
+    font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 60px;
+    color: #fefffe;
+
+}
+@media (max-width: 768px) {
+    .custom-buttons {
+        text-align: center;
+    }
+}

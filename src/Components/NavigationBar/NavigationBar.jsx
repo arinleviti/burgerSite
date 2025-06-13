@@ -1,9 +1,10 @@
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import "./NavigationBar.css"; // Import your custom CSS for styling
 import logo from "../../assets/Logo.png";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-function MyNavbar() {
+
+function MyNavbar({prop}) {
 
 const [isMobile, setIsMobile] = useState(false);
 
@@ -34,21 +35,18 @@ useEffect(() => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ marginRight: "20px" }} />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="ms-auto my-nav-links">
-            <Nav.Link href="#menu">MENU</Nav.Link>
-            <Nav.Link href="#locations">LOCATIONS</Nav.Link>
-            <Nav.Link href="#story">STORY</Nav.Link>
-            <Nav.Link href="#contact">CONTACT</Nav.Link>
+            <Nav.Link href="#menu">{prop.item1}</Nav.Link>
+            <Nav.Link href="#locations">{prop.item2}</Nav.Link>
+            <Nav.Link href="#story">{prop.item3}</Nav.Link>
+            <Nav.Link href="#contact">{prop.item4}</Nav.Link>
             {!isMobile && (
               <Button variant="outline-dark" className="ms-3 my-button">
                 Order & Collect
               </Button>
             )}
-            <Nav.Link href="#insta" className="icon-link">
-              <i style={{ marginLeft: "16px", marginRight: "0px" }} className="bi bi-instagram "></i>
-            </Nav.Link>
-            <Nav.Link href="#tiktok" className="icon-link">
-              <i style={{ marginLeft: "0px", marginRight: "0px" }} className="bi bi-tiktok "></i>
-            </Nav.Link>
+
+            {prop.social1}
+            {prop.social2}
           </Nav>
         </Navbar.Collapse>
       </Container>
