@@ -1,18 +1,7 @@
 
-/* .hero-section {
-    text-align: left;
-      width: 300px;
-      padding-top: 30px; 
-  margin: 0;  
-    flex:1;
-    max-width:700px;
-
-} */
 
 .hero-section {
-  /* Remove hardcoded width and max-width */
-  /* width: 300px; */
-  /* max-width: 400px or 700px — remove these! */
+
   display: flex;
   flex-direction: column;
   justify-content: center; /* centers content vertically */
@@ -39,7 +28,7 @@
 }
 @media (max-width: 768px) {
     .hero-section {
-
+        padding-bottom: 0px;
        
     }
     .hero-title {

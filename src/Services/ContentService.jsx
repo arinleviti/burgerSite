@@ -19,9 +19,13 @@ import pouring from '../assets/pouring.jpg';
 import exterior from '../assets/exterior.jpg';
 import redNeon from '../assets/red-neon.jpg';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Link } from "react-router-dom";
+import chicken from '../Assets/ForMenu/chicken.jpg';
+import menuBoard from '../Assets/ForMenu/menuBoard.jpg';
+import pickUp from '../Assets/ForMenu/pickUp.jpg';
 
 export const navBarContent = {
-  item1: "MENU",
+  item1: <Link style={{ textDecoration: "none", color: "inherit" }} to="/Menu">MENU</Link>,
   item2: "LOCATIONS",
   item3: "STORY",
   item4: "CONTACT",
@@ -107,4 +111,17 @@ export const threePics2 = [
 export const newsletterContent = {
   title: "DEALS AND NEWS IN YOUR INBOX",
   text: "Get the latest news and offers from Best Burgers straight in your emails"
+}
+
+export const menuPics = {
+ pic1: chicken,
+ pic2: menuBoard,
+pic3: pickUp,
+menuText: "MENU",
+socialMedia1: <Nav.Link href="#insta" className="icon-link">
+              <i style={{ marginLeft: "16px", marginRight: "0px" }} className="bi bi-instagram "></i>
+            </Nav.Link>,
+socialMedia2: <Nav.Link href="#tiktok" className="icon-link">
+              <i style={{ marginLeft: "0px", marginRight: "0px" }} className="bi bi-tiktok "></i>
+            </Nav.Link>
 }

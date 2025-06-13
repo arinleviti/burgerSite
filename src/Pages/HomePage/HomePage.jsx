@@ -16,14 +16,13 @@ import {
   threePics1,
   threePics2,
   newsletterContent,
-  navBarContent,
 } from "../../Services/ContentService.jsx";
 import './HomePage.css';
 
 function HomePage() {
   return (
-<div className="header">
-        <NavigationBar prop={navBarContent}/>
+<div className="header-home">
+
         <div className="first-hero" >
           <Hero
             content={heroContent}
@@ -40,11 +39,14 @@ function HomePage() {
           content={heroMenu}
           media={<ProductCarousel />}
           button={heroButton2}
-          style={{ padding: "50px 0px" }}
+          style={{ padding: "50px 0px", paddingBottom: "65px" }}
         />
         <MapParent />
-        <Hero content={socialContent} media={<SocialMedia />} />
-        <div className="deliveryContainer" style={{ paddingBottom: "50px" }}>
+        <div className="social-container">
+          <Hero content={socialContent} media={<SocialMedia />} />
+        </div>
+        
+        <div className="deliveryContainer" style={{ paddingBottom: "60px", paddingLeft: "0px" }}>
           <Delivery />
         </div>
         <div className="picsContainer" style={{ paddingBottom: "50px" }}>

@@ -22,17 +22,20 @@
     .delivery-container {
     flex-direction: column;
     align-items: center; /* NEW: align children to the left */
+    gap:20px
+
   }
 
   .delivery-container > * {
     max-width: 100%;
     flex: none;
+    gap:10px
   }
 
   .hero-section-right {
     text-align: left;
-    padding-left: 25px;
-    padding-right: 0;
+    padding-left: 30px;
+    padding-right: 25px;
     margin-left: 0; /* NEW: prevent auto margin from pushing it right */
   }
 }

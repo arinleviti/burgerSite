@@ -1,7 +1,7 @@
 .custom-container {
-    padding-bottom:50px;
+    padding-bottom:10px;
     padding-right:60px !important;
-    padding-top: 60px;
+    padding-top: 0px;
 }
 
 /* Make the wrapper fill the column and fix height */
@@ -29,7 +29,7 @@ border-right:  white 5px solid;
   .custom-container {
     padding-right: 10px !important;
     padding-left: 10px !important;
-    
+    padding-top: 20px !important;
   }
   .image-wrapper {
     border-top: white 5px solid;

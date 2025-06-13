@@ -1,7 +1,7 @@
 .pictures-wrapper {
   width: 100%;
-  max-width: 93.5vw;  /* 3 * 510px (your image width) */
-  margin: 0 auto;     /* Center the content */
+  max-width: 100vw;  /* 3 * 510px (your image width) */
+  margin: 0px;     /* Center the content */
   box-sizing: border-box;
   padding: 0 ;    /* Optional: to give a bit of breathing room on small screens */
 }
@@ -10,13 +10,13 @@
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  padding: 0 20px; /* now both get the same horizontal padding */
+  padding: 0 0px; /* now both get the same horizontal padding */
 }
 
 .pictures-row {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 0px;
   gap: 0; /* no gap */
 }
 
@@ -39,18 +39,22 @@
   .pictures-row {
     flex-direction: column;
     align-items: center;
+padding-top: 0px;
 
   }
   .picture {
-    border-right: 5px solid white; /* keep full border on mobile */
+    border-right: 2px solid white; /* keep full border on mobile */
     margin-bottom: 10px; /* space between stacked images */
-    width: 88vw;          /* Responsive width: 90% of viewport width */
+    width: 100vw;          /* Responsive width: 90% of viewport width */
     max-width: 510px;     /* Don't grow beyond 510px on bigger screens */
     height: 350px;         /* Let height scale automatically */
-    border-right: 5px solid white; /* full border */
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   .picture:last-child {
     margin-bottom: 0;
+  }
+  .pictures-wrapper {
+    padding-top: 0px;
+    padding-bottom:20px;
   }
 }

@@ -21,9 +21,9 @@ const currentYear = new Date().getFullYear();
        <span className="fs-2 me-3">{prop.social1}</span>
   <span className="fs-2">{prop.social2}</span>
       </div>
-      <div className="text-center mt-3 small">
+      <div style={{ fontFamily: "'Noto Mono', monospace" }} className="text-center mt-3 small">
           <a href="/privacy" className="text-white me-3">Privacy Notice</a>
-          <span>&copy; {currentYear} Best Burgers</span>
+          <span style={{ fontFamily: "'Noto Mono', monospace" }}>&copy; {currentYear} Best Burgers</span>
         </div>
       </Container>
     </footer>
