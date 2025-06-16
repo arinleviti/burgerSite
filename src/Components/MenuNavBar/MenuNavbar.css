@@ -1,0 +1,44 @@
+/* Base styling for the navbar */
+.my-navbar-menu {
+  background-color: #b81a0e;         /* Dark red background for strong visual */
+  font-family: 'Excon', sans-serif;  /* Custom font for branding and style */
+  font-size: 25px;                   /* Larger font size for desktop readability */
+  color: #fefffe !important;         /* Light text color, !important to override Bootstrap defaults */
+}
+
+/* Ensures all nav links inside the navbar have white text */
+.my-navbar-menu .nav-link {
+  color: #fefffe !important;         /* Force white text color on links */
+}
+
+/* Mobile-specific styles applied on screens 768px wide or less */
+@media (max-width: 768px) {
+  
+  /* Make the navbar fixed at the bottom of the viewport on mobile */
+  .my-navbar-menu {
+    position: fixed !important;                 /* Fix the navbar so it stays visible on scroll */
+    bottom: 0 !important;                      /* Align it flush to the bottom edge */
+    width: 100%;                    /* Span full width of the viewport */
+    z-index: 999;                   /* Sit above most other content */
+    border-top: 1px solid #fefffe; /* Adds a thin white border on top for separation */
+  }
+
+  /* Set up the navigation container as a horizontal flexbox row */
+  .my-navbar-menu .nav {
+    display: flex;                  /* Enable flexbox layout */
+    flex-direction: row;            /* Arrange nav items horizontally */
+    justify-content: space-between;/* Distribute nav items evenly with space between */
+    flex-wrap: nowrap;              /* Prevent items from wrapping to multiple lines */
+    width: 100%;                   /* Fill the entire width of the navbar */
+  }
+
+  /* Style individual nav links for mobile */
+  .my-navbar-menu .nav-link {
+    flex: 1 1 0;                   /* Allow links to grow and shrink evenly to fill space */
+    text-align: center;            /* Center text inside each nav link */
+    padding: 10px;                 /* Add padding for easier tapping on mobile */
+    font-size: clamp(10px, 3vw, 14px); /* Responsive font size: min 10px, max 14px, scales with viewport */
+    white-space: nowrap;           /* Prevent link text from breaking into multiple lines */
+    color: white !important;       /* Force white color for link text */
+  }
+}

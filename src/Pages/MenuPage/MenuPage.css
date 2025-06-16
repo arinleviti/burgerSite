@@ -44,8 +44,17 @@ font-family: 'Excon', sans-serif;
   font-size: 6vw;
     padding-top: 70px;
     color: #fefffe;
-}
 
+  letter-spacing: -5px;     /* squashes letters slightly */
+}
+.social-media-wrap {
+  display: flex;
+  justify-content: center; /* centers children horizontally */
+  align-items: center;
+  margin-top: 40px;
+  color: white; /* makes the text white */
+  
+}
 @media (max-width: 768px) {
     .menu-single-image {
     width: 170px;
@@ -56,6 +65,13 @@ font-family: 'Excon', sans-serif;
     }
     .custom-container {
         padding-top: 150px;
+    }
+    .menu-title h1{
+       letter-spacing: 0px;
+       font-size: 9vw;
+    }
+    .custom-container-menu {
+      height: 600px;
     }
 }
 

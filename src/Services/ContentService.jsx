@@ -23,6 +23,7 @@ import { Link } from "react-router-dom";
 import chicken from '../Assets/ForMenu/chicken.jpg';
 import menuBoard from '../Assets/ForMenu/menuBoard.jpg';
 import pickUp from '../Assets/ForMenu/pickUp.jpg';
+import burgerCat from '../Assets/ForMenu/burgerCat.jpg'
 
 export const navBarContent = {
   item1: <Link style={{ textDecoration: "none", color: "inherit" }} to="/Menu">MENU</Link>,
@@ -119,9 +120,22 @@ export const menuPics = {
 pic3: pickUp,
 menuText: "MENU",
 socialMedia1: <Nav.Link href="#insta" className="icon-link">
-              <i style={{ marginLeft: "16px", marginRight: "0px" }} className="bi bi-instagram "></i>
+              <i  className="bi bi-instagram "></i>
             </Nav.Link>,
 socialMedia2: <Nav.Link href="#tiktok" className="icon-link">
-              <i style={{ marginLeft: "0px", marginRight: "0px" }} className="bi bi-tiktok "></i>
+              <i  className="bi bi-tiktok "></i>
             </Nav.Link>
+}
+
+export const menuBar = [
+ {href: "#burgers", item: "BURGERS"},
+  {href: "#chicken", item: "CHICKEN"},
+  {href: "#hotDogs", item: "HOT DOGS"},
+  {href: "#sides", item: "SIDES"},
+  {href: "#drinks", item: "DRINKS"}
+]
+
+export const burgerCategory = {
+  category : "SIGNATURE BURGERS",
+  img: burgerCat
 }

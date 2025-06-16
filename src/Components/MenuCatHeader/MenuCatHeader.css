@@ -1,0 +1,72 @@
+.cat-header-container1 {
+  border: 2px black solid;
+  background-color: white;
+    display: flex; /* CHANGED from inline-flex to flex */
+  flex-direction: row; /* ADDED: text and image side by side by default */
+  border-radius: 10px;
+   max-width:1000px;        /* or a fixed width like 300px */
+  max-height: 180px;       /* control height as needed */
+  overflow: hidden;        /* hide overflowing content */
+
+  padding: 10px; /* ADDED: for spacing */
+  align-items: center; /* ADDED: center align items vertically */
+  justify-content: space-between; /* ADDED: distribute space */
+  border: black 2px solid;    /* Hard-edged shadows: right and bottom */
+  box-shadow: 3px 3px 0 0 black;
+}
+
+.cat-header-title {
+    font-family: 'Excon', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  font-size: 4vw;
+padding: 10px 50px;
+    color: black;
+    letter-spacing: -3px;
+    flex: 2; /* ADDED: makes title take more space than image */
+}
+.word-black {
+  color: #333333;
+}
+
+.word-red {
+  color: #b81a0e;
+}
+.cat-img {
+    display:flex;
+    
+flex: 1; /* ADDED: allows layout control */
+}
+.cat-img img {
+  padding-top: 40px;
+  padding-left:30px;
+  width: 200px;             /* make it larger than container */
+  height: auto;
+  object-fit: cover;        /* better for cropping effect */
+  transform: scale(2);    /* optional: enlarge image slightly */
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .cat-header-container1 {
+    flex-direction: row; /* ADDED: stack vertically on mobile */
+    max-height: none;       /* ADDED: let it grow vertically */
+  }
+
+  .cat-header-title {
+    font-size: 6vw;         /* INCREASE text size */
+    padding: 20px;
+    text-align: center;     /* Center-align text */
+    letter-spacing: -1px;
+  }
+
+  .cat-img {
+    justify-content: center; /* Center image horizontally */
+  }
+
+  .cat-img img {
+    transform: scale(1.5)  translateX(30px);  /* REDUCE scale on mobile */
+    width: 120px;           /* Smaller image */
+    padding: 10px 0 0 0;    /* Adjust spacing */
+  }
+}
