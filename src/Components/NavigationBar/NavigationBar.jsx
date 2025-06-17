@@ -35,7 +35,7 @@ useEffect(() => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ marginRight: "20px" }} />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="ms-auto my-nav-links">
-            <Nav.Link href="#menu">{prop.item1}</Nav.Link>
+            {prop.item1}
             <Nav.Link href="#locations">{prop.item2}</Nav.Link>
             <Nav.Link href="#story">{prop.item3}</Nav.Link>
             <Nav.Link href="#contact">{prop.item4}</Nav.Link>

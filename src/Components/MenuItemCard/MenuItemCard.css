@@ -1,0 +1,30 @@
+.card-container {
+     width: 100%;       /* full width of grid column */
+  max-width: 250px;  /* still controls individual card size */
+    height: auto;
+ border: none !important; /* removes border */
+    box-shadow: none !important; /* removes shadow if any */
+}
+.card-image {
+    background-color: white;
+}
+.card-title {
+  font-family: 'Excon', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+.card-description {
+  font-family: 'Noto Mono', monospace;  
+}
+.card-price {
+    font-family: 'Excon', sans-serif;
+    font-size: 30px;
+    color: #b81a0e;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+       width: 150px; 
+ 
+    }
+}

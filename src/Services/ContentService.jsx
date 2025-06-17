@@ -23,7 +23,11 @@ import { Link } from "react-router-dom";
 import chicken from '../Assets/ForMenu/chicken.jpg';
 import menuBoard from '../Assets/ForMenu/menuBoard.jpg';
 import pickUp from '../Assets/ForMenu/pickUp.jpg';
-import burgerCat from '../Assets/ForMenu/burgerCat.jpg'
+import burgerCat from '../Assets/ForMenu/burgerCat.jpg';
+import bigBurgerCard from '../Assets/ForMenu/bigBurgerCard.jpg';
+ import cheeseBurgerCard from '../Assets/ForMenu/cheeseBurgerCard.jpg';
+ import friedBurgerCard from '../Assets/ForMenu/friedBurgerCard.jpg';
+ import veggieBurgerCard from '../Assets/ForMenu/veggieBurgerCard.jpg';
 
 export const navBarContent = {
   item1: <Link style={{ textDecoration: "none", color: "inherit" }} to="/Menu">MENU</Link>,
@@ -139,3 +143,31 @@ export const burgerCategory = {
   category : "SIGNATURE BURGERS",
   img: burgerCat
 }
+
+export const menuItemsBurger = [
+  {
+    img: bigBurgerCard,
+    name: 'CLASSIC BURGER',
+    description: 'Juicy beef patty with lettuce, tomato, and cheese.',
+    price:  8.99
+  },
+  {
+    img: cheeseBurgerCard,
+    name: 'BACON BBQ BURGER',
+    description: 'Loaded with bacon and smoky BBQ sauce.',
+    price: 9.99
+  },
+  {
+    img: friedBurgerCard,
+    name: 'BURGER WITH FRIES',
+    description: 'Loaded with our signature fries.',
+    price: 9.99
+  },
+  {
+    img: veggieBurgerCard,
+    name: 'VEGGIE BURGER',
+    description: 'A slice of veggie delight and fresh tomato.',
+    price: 9.99
+  }
+  
+];

@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear();
       <Container>
         <Navbar expand="md" variant="dark">
           <Nav className="mx-auto custom-buttons">
-            <Nav.Link href="#home">{prop.item1}</Nav.Link>
+            {prop.item1}
             <Nav.Link href="#locations">{prop.item2}</Nav.Link>
             <Nav.Link href="#story">{prop.item3}</Nav.Link>
             <Nav.Link href="#contact">{prop.item4}</Nav.Link>
