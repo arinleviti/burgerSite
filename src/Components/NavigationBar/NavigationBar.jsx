@@ -31,7 +31,7 @@ useEffect(() => {
   return (
     <Navbar expand="lg" className="my-navbar">
       <Container className="container">
-        <Navbar.Brand as={Link} to="/" href="#home" onClick={closeMobileMenu}>
+        <Navbar.Brand as={Link} to="/" href="#home" onClick={() => {closeMobileMenu(); window.scrollTo({top:0, behaviour: 'smooth'})}}>
           <img src={logo} alt="Burger Logo" className="logo" />
         </Navbar.Brand>
 
@@ -46,7 +46,7 @@ useEffect(() => {
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="ms-auto my-nav-links" onClick={closeMobileMenu}>
            
-            <Nav.Link as={Link} to="/Menu" onClick={closeMobileMenu}>{prop.item1} </Nav.Link>
+            <Nav.Link as={Link} to="/Menu" onClick={() => {closeMobileMenu(); window.scrollTo({top:0, behaviour: 'smooth'})}}>{prop.item1} </Nav.Link>
             <Nav.Link href="#locations" onClick={closeMobileMenu}>{prop.item2} </Nav.Link>
             <Nav.Link href="#story" onClick={closeMobileMenu}>{prop.item3}</Nav.Link>
             <Nav.Link href="#contact" onClick={closeMobileMenu}>{prop.item4}</Nav.Link>

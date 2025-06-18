@@ -38,7 +38,6 @@ import bigBurgerCard from '../Assets/ForMenu/bigBurgerCard.jpg';
  import fantaCard from '../Assets/ForMenu/fantaCard.jpg';
  import spriteCard from '../Assets/ForMenu/spriteCard.jpg';
  import beerCard from '../Assets/ForMenu/beerCard.jpg';
- import { useNavigate } from "react-router-dom";
 
 
 export const navBarContent = {
@@ -122,14 +121,14 @@ export const socialPics = [
 export const deliveryContent = {
   title: "DELIVERY TO YOUR DOORSTEP",
   description: "Enjoy our delicious burgers delivered right to your doorstep. Fast, fresh, and convenient!",
-  icon1: <button style={{ paddingRight: "20px", border: 'none', background: 'none' }}>
-  <img src={uberIcon} alt="Uber Eats" style={{ height: '45px' }} />
+  icon1: <button style={{ paddingRight: "00px", border: 'none', background: 'none' }}>
+  <img src={uberIcon} alt="Uber Eats" style={{ height: '35px' }} />
 </button>,
-  icon2: <button style={{ paddingRight: "20px",paddingLeft: "20px", border: 'none', background: 'none' }}>
-  <img src={justEatIcon} alt="Uber Eats" style={{ height: '45px' }} />
+  icon2: <button style={{ paddingRight: "00px",paddingLeft: "00px", border: 'none', background: 'none' }}>
+  <img src={justEatIcon} alt="Uber Eats" style={{ height: '35px' }} />
 </button>,
-  icon3: <button style={{ paddingLeft: "20px", border: 'none', background: 'none' }}>
-  <img src={deliverooIcon} alt="Uber Eats" style={{ height: '45px' }} />
+  icon3: <button style={{ paddingLeft: "00px", border: 'none', background: 'none' }}>
+  <img src={deliverooIcon} alt="Uber Eats" style={{ height: '35px' }} />
 </button>
 };
 

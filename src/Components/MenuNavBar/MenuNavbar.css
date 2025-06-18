@@ -19,6 +19,8 @@
     position: fixed !important;                 /* Fix the navbar so it stays visible on scroll */
     bottom: 0 !important;                      /* Align it flush to the bottom edge */
     width: 100%;                    /* Span full width of the viewport */
+  left: 0;
+right: 0;
     z-index: 999;                   /* Sit above most other content */
     border-top: 1px solid #fefffe; /* Adds a thin white border on top for separation */
   }
@@ -27,18 +29,20 @@
   .my-navbar-menu .nav {
     display: flex;                  /* Enable flexbox layout */
     flex-direction: row;            /* Arrange nav items horizontally */
-    justify-content: space-between;/* Distribute nav items evenly with space between */
-    flex-wrap: nowrap;              /* Prevent items from wrapping to multiple lines */
-    width: 100%;                   /* Fill the entire width of the navbar */
+   justify-content: space-evenly; /* space out items evenly */
+    flex-wrap: wrap;               /* allow wrapping to next line */
+    width: 100%;
+    overflow: hidden;              /* absolutely prevent overflow */
   }
-
+  
+  
   /* Style individual nav links for mobile */
   .my-navbar-menu .nav-link {
-    flex: 1 1 0;                   /* Allow links to grow and shrink evenly to fill space */
+    flex: 1 1 auto;                /* allow items to shrink and grow */
     text-align: center;            /* Center text inside each nav link */
-    padding: 10px;                 /* Add padding for easier tapping on mobile */
-    font-size: clamp(10px, 3vw, 14px); /* Responsive font size: min 10px, max 14px, scales with viewport */
-    white-space: nowrap;           /* Prevent link text from breaking into multiple lines */
+    padding: 6px 8px; /* Reduced from 10px to avoid excess width */
+    font-size: clamp(9px, 3vw, 12px); /* Slightly looser clamp */
+    white-space: normal;           /* Prevent link text from breaking into multiple lines */
     color: white !important;       /* Force white color for link text */
   }
 }

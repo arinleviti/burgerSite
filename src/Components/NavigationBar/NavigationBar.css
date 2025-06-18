@@ -79,7 +79,7 @@ padding-left: 60%;
   transform: scale(1.3); /* grow to 150% size */
   color: inherit !important;  /* Prevent Bootstrap's hover color */
 }
-@media (max-width: 990px) {
+@media (max-width: 768px) {
   .navbar-collapse {
     background-color: #b81a0e;
 
@@ -115,6 +115,15 @@ padding-left: 60%;
     gap: 30px;
     margin-right: 3vw;
   }
+  
+ .my-button {
+    font-size: 13px !important;      /* smaller font */
+
+   
+
+  }
+
+
 }
 
 
