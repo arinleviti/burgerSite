@@ -8,8 +8,22 @@
     color: #fefffe;
 
 }
+.footer-container {
+    padding-top: 0 !important;
+    padding-bottom: 30px;
+}
 @media (max-width: 768px) {
-    .custom-buttons {
+    footer .custom-buttons {
         text-align: center;
+        margin: 0px;
     }
+   footer  .custom-buttons * {
+    font-size: 13px;
+    line-height: 10px;
+    margin: 4px 0;
+  }
+  footer .footer-container {
+   padding-bottom: 30px !important;
+   padding-top: 0px !important;
+}
 }

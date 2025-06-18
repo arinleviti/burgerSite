@@ -42,3 +42,11 @@
     color: white !important;       /* Force white color for link text */
   }
 }
+@media (min-width: 769px) {
+  .my-navbar-menu {
+    position: sticky !important; /* re-enable sticky on desktop */
+    top: 90px;
+    z-index: 999;
+  }
+}
+

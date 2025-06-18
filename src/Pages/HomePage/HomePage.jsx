@@ -8,7 +8,6 @@ import SocialMedia from "../../Components/SocialMediaPics/SocialMediaPicsCont.js
 import Delivery from "../../Components/Delivery/Delivery.jsx";
 import NewsLetter from "../../Components/Newsletter/Newsletter.jsx";
 import {
-  heroButton2,
   heroContent,
   heroMedia,
   heroMenu,
@@ -16,6 +15,7 @@ import {
   threePics1,
   threePics2,
   newsletterContent,
+  heroButton
 } from "../../Services/ContentService.jsx";
 import './HomePage.css';
 
@@ -38,7 +38,7 @@ function HomePage() {
         <Hero
           content={heroMenu}
           media={<ProductCarousel />}
-          button={heroButton2}
+          button={heroButton}
           style={{ padding: "50px 0px", paddingBottom: "65px" }}
         />
         <MapParent />

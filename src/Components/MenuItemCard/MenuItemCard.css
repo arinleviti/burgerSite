@@ -1,10 +1,24 @@
 .card-container {
      width: 100%;       /* full width of grid column */
   max-width: 250px;  /* still controls individual card size */
-    height: auto;
+
  border: none !important; /* removes border */
     box-shadow: none !important; /* removes shadow if any */
+
+   height: 400px; /* Fixed height for all cards */ 
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* spreads the elements out: image on top, text in the middle, and price toward the bottom. */
 }
+
+.card-container .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 .card-image {
     background-color: white;
 }

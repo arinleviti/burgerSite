@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import './MenuPage.css'
 import MenuNavBar from "../../Components/MenuNavBar/MenuNavbar";
-import {menuBar, burgerCategory } from '../../Services/ContentService.jsx'
+import {menuBar, burgerCategory, chickenCategory, menuItemsBurger, menuItemsChicken, drinksCategory, menuItemsDrinks } from '../../Services/ContentService.jsx'
 import MenuCatComponent from "../../Components/MenuCatComponent/MenuCatComponent.jsx";
 
 export function MenuPage({ props }) {
@@ -20,10 +20,17 @@ export function MenuPage({ props }) {
                 <span className="fs-2 me-3">{props.socialMedia2}</span>
             </div>
         </Container>
-        <div>
-            <MenuCatComponent props={burgerCategory}/>
+        <MenuNavBar props={menuBar} />
+        <div id="burgers">
+            <MenuCatComponent props={burgerCategory} menuItems={menuItemsBurger}/>
         </div>
-        <MenuNavBar props={menuBar} /></>
+        <div id="chicken">
+            <MenuCatComponent props={chickenCategory} menuItems={menuItemsChicken}/>
+        </div>
+        <div id="drinks">
+            <MenuCatComponent props={drinksCategory} menuItems={menuItemsDrinks}/>
+        </div>
+        </>
     )
 }
 export default MenuPage;

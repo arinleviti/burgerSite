@@ -6,11 +6,11 @@ export function Footer({prop}) {
 const currentYear = new Date().getFullYear();
 
   return (
-    <footer className=" text-white mt-5 py-3">
-      <Container>
+    <footer className=" text-white ">
+      <Container className="footer-container">
         <Navbar expand="md" variant="dark">
-          <Nav className="mx-auto custom-buttons">
-            {prop.item1}
+          <Nav className="mx-auto  custom-buttons">
+            <Nav.Link href="#locations">{prop.item1}</Nav.Link>
             <Nav.Link href="#locations">{prop.item2}</Nav.Link>
             <Nav.Link href="#story">{prop.item3}</Nav.Link>
             <Nav.Link href="#contact">{prop.item4}</Nav.Link>

@@ -28,9 +28,21 @@ import bigBurgerCard from '../Assets/ForMenu/bigBurgerCard.jpg';
  import cheeseBurgerCard from '../Assets/ForMenu/cheeseBurgerCard.jpg';
  import friedBurgerCard from '../Assets/ForMenu/friedBurgerCard.jpg';
  import veggieBurgerCard from '../Assets/ForMenu/veggieBurgerCard.jpg';
+ import chickenBucketCard  from '../Assets/ForMenu/chickenBucketCard.jpg';
+ import chickenBurgerCard  from '../Assets/ForMenu/chickenBurgerCard.jpg';
+ import sixChickenLegsCard  from '../Assets/ForMenu/sixChickenLegsCard.jpg';
+ import threeChickenLegsCard  from '../Assets/ForMenu/threeChickenLegsCard.jpg';
+ import chickenHeader from '../Assets/ForMenu/chickenHeader.jpg'; 
+ import drinksHeader from '../Assets/ForMenu/drinksHeader.jpg';
+ import cokeCard from '../Assets/ForMenu/cokeCard.jpg';
+ import fantaCard from '../Assets/ForMenu/fantaCard.jpg';
+ import spriteCard from '../Assets/ForMenu/spriteCard.jpg';
+ import beerCard from '../Assets/ForMenu/beerCard.jpg';
+ import { useNavigate } from "react-router-dom";
+
 
 export const navBarContent = {
-  item1: <Link style={{ textDecoration: "none", color: "inherit" }} to="/Menu">MENU</Link>,
+  item1: "MENU",
   item2: "LOCATIONS",
   item3: "STORY",
   item4: "CONTACT",
@@ -50,9 +62,29 @@ export const heroContent = {
 export const heroMedia = <Video video={{ video: burgerVideo }} />;
 export const heroMedia2 = <Video video={{ video: nuggetsVideo }} className="hero-video" />;
 
-export const heroButton = <Button variant="primary" size="lg" className="hero-button">SEE FULL MENU</Button>;
-export const heroButton2 = <Button variant="primary" size="lg" className="hero-button">SEE FULL MENU <FaLongArrowAltRight /></Button>;
+export const heroButton = (
+  <Link to="/Menu" style={{ textDecoration: 'none' }}>
+    <Button variant="primary" size="lg" className="hero-button">
+      SEE FULL MENU <FaLongArrowAltRight />
+    </Button>
+  </Link>
+);
+export const heroButton2 = <Button  variant="primary" size="lg" className="hero-button">SEE FULL MENU <FaLongArrowAltRight /></Button>;
 
+/* export const HeroButton3 = () => {
+  const navigate = useNavigate();
+
+  return (
+    <Button
+      variant="primary"
+      size="lg"
+      className="hero-button"
+      onClick={() => navigate("/Menu")}
+    >
+      SEE FULL MENU <FaLongArrowAltRight />
+    </Button>
+  );
+}; */
 export const heroMenu = {
     title: "BURGERS, SIDES, DRINKS & MORE",
     description: "Explore our delicious menu featuring a variety of burgers, sides, and beverages. There's something for everyone!"
@@ -144,6 +176,15 @@ export const burgerCategory = {
   img: burgerCat
 }
 
+export const chickenCategory = {
+  category : "CHICKEN DELIGHT",
+  img: chickenHeader
+}
+export const drinksCategory = {
+  category : "SOFT DRINKS",
+  img: drinksHeader
+}
+
 export const menuItemsBurger = [
   {
     img: bigBurgerCard,
@@ -168,6 +209,62 @@ export const menuItemsBurger = [
     name: 'VEGGIE BURGER',
     description: 'A slice of veggie delight and fresh tomato.',
     price: 9.99
+  }
+  
+];
+
+export const menuItemsChicken = [
+  {
+    img: chickenBucketCard,
+    name: 'FRIED CHICKEN BUCKET',
+    description: 'A family-size bucketload of crispy chicken legs',
+    price:  19.99
+  },
+  {
+    img: chickenBurgerCard,
+    name: 'FRIEND CHICKEN BURGER',
+    description: 'Loaded with fried chicken breast and smoky BBQ sauce.',
+    price: 12.99
+  },
+  {
+    img: sixChickenLegsCard,
+    name: 'SIX CHICKEN LEGS',
+    description: 'Six chicken legs fried to perfection',
+    price: 10.99
+  },
+  {
+    img: threeChickenLegsCard,
+    name: 'THREE CHICKEN LEGS',
+    description: 'Three chicken legs fried to perfection',
+    price: 7.99
+  }
+  
+];
+
+export const menuItemsDrinks = [
+  {
+    img: cokeCard,
+    name: 'COKE 330 ml',
+    description: 'A can of delishiously refreshing Coke',
+    price:  2.99
+  },
+  {
+    img: spriteCard,
+    name: 'SPRITE 330 ml',
+    description: 'A can of delishiously refreshing Sprite',
+    price: 2.99
+  },
+  {
+    img: fantaCard,
+    name: 'FANTA 330 ml',
+    description: 'A can of delishiously refreshing Fanta',
+    price: 2.99
+  },
+  {
+    img: beerCard,
+    name: 'BOTTLE OF BEER',
+    description: 'A bottle of delishiously refreshing beer',
+    price: 3.99
   }
   
 ];
